@@ -1,0 +1,134 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="sidenav">
+        <div class="nav-item">
+            <a href="#">Estudiantes</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Grupos</a>
+        </div>
+        <div class="nav-item" (click)="verHome()">
+            <a href="#">Materias</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Evaluaciones</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Informes</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="titulos">
+            <h2>Administración de Materias</h2>
+            <div class="boton" onclick=""><i class="fa-solid fa-circle-plus"></i>Nuevo registro</div>
+        </div>
+        <div class="buscador">
+            <div class="buscador-item">
+                <label for="grado">Grado</label>
+                <select name="grado" id="grado">
+                    <option value="">       </option>
+                    <option value="">Grado 10</option>
+                    <option value="">Grado 11</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="grupo">Grupo</label>
+                <select name="grupo" id="grupo">
+                    <option value="">       </option>
+                    <option value="">Grupo 1</option>
+                    <option value="">Grupo 2</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="Materia">Materia</label>
+                <select name="Materia" id="Materia" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Geografía</option>
+                    <option value="">Historia</option>
+                    <option value="">Filosofía</option>
+                    <option value="">Español</option>
+                    <option value="">Inglés</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="Profesor">Profesor</label>
+                <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Fabio León Restrepo</option>
+                    <option value="">Jaime Alberto Giraldo</option>
+                    <option value="">Adriana María Zuluaga</option>
+                    <option value="">Fabiola Ramirez</option>
+                    <option value="">Maria Dolores Smicth</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <button class="botonBuscar">Buscar</button>
+            </div>
+            <div class="buscador-item">
+                <a href="#">Limpiar filtros</a>
+            </div>
+        </div>
+        <div class="materias">
+            <table class="tabla">
+                <caption>Resultados</caption>
+                <tr style="background-color: rgba(1, 102, 145, 1);">
+                    <th>Codigo</th>
+                    <th>Materia</th>
+                    <th>Profesor</th>
+                    <th>Grado</th>
+                    <th>Acciones</th>
+                </tr>
+                <tr>
+                    <td>SOC001</td>
+                    <td>Geografía</td>
+                    <td>Fabio León Restrepo</td>
+                    <td>6,7,8,9,10,11</td>
+                    <td>
+                        <div class="icono" (click)="verMateria()"><i class="fa-regular fa-eye fa-xl"></i></div>
+                        <div class="icono" (click)="confirmDelete()"><i class="fa-regular fa-trash-can fa-xl"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SOC002</td>
+                    <td>Historia</td>
+                    <td>Jaime Alberto Giraldo</td>
+                    <td>6,7,8</td>
+                    <td>
+                        <div class="icono" (click)="verMateria()"><i class="fa-regular fa-eye fa-xl"></i></div>
+                        <div class="icono" (click)="confirmDelete()"><i class="fa-regular fa-trash-can fa-xl"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SOC003</td>
+                    <td>Filosofía</td>
+                    <td>Adriana María Zuluaga</td>
+                    <td>9,10,11</td>
+                    <td>
+                        <div class="icono" (click)="verMateria()"><i class="fa-regular fa-eye fa-xl"></i></div>
+                        <div class="icono" (click)="confirmDelete()"><i class="fa-regular fa-trash-can fa-xl"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IDM001</td>
+                    <td>Español</td>
+                    <td>Fabiola Ramirez</td>
+                    <td>6,7,8,9,10,11</td>
+                    <td>
+                        <div class="icono" (click)="verMateria()"><i class="fa-regular fa-eye fa-xl"></i></div>
+                        <div class="icono" (click)="confirmDelete()"><i class="fa-regular fa-trash-can fa-xl"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IDM003</td>
+                    <td>Inglés</td>
+                    <td>Maria Dolores Smicth</td>
+                    <td>6,7,8,9,10,11</td>
+                    <td>
+                        <div class="icono" (click)="verMateria()"><i class="fa-regular fa-eye fa-xl"></i></div>
+                        <div class="icono" (click)="confirmDelete()"><i class="fa-regular fa-trash-can fa-xl"></i></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura del 100% del viewport */
+}
+
+.alerta{
+    height: 200px;
+    width: 340px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.titulo{
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion{
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.botones{
+    margin-left: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.cancelar,.confirmar{
+    border: 1px solid #009CDE;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center ;
+    padding: 10px;
+    box-sizing: border-box;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.cancelar{
+    color: #009CDE;
+
+}
+
+.confirmar{
+    color: #ffffff;
+    background-color: #009CDE;
+}

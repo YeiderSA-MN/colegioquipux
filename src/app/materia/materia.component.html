@@ -1,0 +1,171 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="sidenav">
+        <div class="nav-item">
+            <a href="#">Estudiantes</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Grupos</a>
+        </div>
+        <div class="nav-item" (click)="verHome()">
+            <a href="#">Materias</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Evaluaciones</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Informes</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="titulos">
+            <h2>Administración de Materias / Materia</h2>
+        </div>
+        <div class="buscador">
+            <div class="subtitulo">
+                <h2>Informacion de la Materia</h2>
+            </div>
+            <div class="buscador-item">
+                <label for="Materia">Materia</label>
+                <select name="Materia" id="Materia" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Geografía</option>
+                    <option value="">Historia</option>
+                    <option value="">Filosofía</option>
+                    <option value="">Español</option>
+                    <option value="">Inglés</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="Profesor">Profesor</label>
+                <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Fabio León Restrepo</option>
+                    <option value="">Jaime Alberto Giraldo</option>
+                    <option value="">Adriana María Zuluaga</option>
+                    <option value="">Fabiola Ramirez</option>
+                    <option value="">Maria Dolores Smicth</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="grado">Grado(s)</label>
+                <select name="grado" id="grado">
+                    <option value="">       </option>
+                    <option value="">Grado 7</option>
+                    <option value="">Grado 8</option>
+                    <option value="">Grado 9</option>
+                    <option value="">Grado 10</option>
+                    <option value="">Grado 11</option>
+                </select>
+            </div>
+        </div>
+        <div class="Estudiante">
+            <div class="subtitulo">
+                <h2>Estudiantes</h2>
+            </div>
+            <div class="buscador-item">
+                <label for="Estudiante">Estudiante</label>
+                <select name="Estudiante" id="Estudiante" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">Camila Fernandez Rojas</option>
+                    <option value="">Juan Felipe Montoya Rios</option>
+                    <option value="">Luisa Maria Cruz Hernández</option>
+                    <option value="">Ana Maria Bedoya López</option>
+                    <option value="">Maria Dolores Smicth</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <label for="Codigo">Codigo estudiante</label>
+                <select name="Codigo" id="Codigo" style="padding-right: 50px;">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="">2022101</option>
+                    <option value="">2022102</option>
+                    <option value="">2022103</option>
+                    <option value="">2022104</option>
+                    <option value="">2022105</option>
+                </select>
+            </div>
+            <div class="buscador-item">
+                <button class="botonBuscar">Buscar</button>
+            </div>
+            <div class="buscador-item">
+                <a href="#">Limpiar filtros</a>
+            </div>
+            <table class="tabla">
+                <tr style="background-color: rgba(1, 102, 145, 1);">
+                    <th>Codigo</th>
+                    <th>Estudiante</th>
+                    <th>Grado</th>
+                    <th>Grupo</th>
+                    <th>Estado</th>
+                    <th>Nota promedio</th>
+                </tr>
+                    <tr>
+                        <td>2022101</td>
+                        <td>Camila Fernandez Rojas</td>
+                        <td>10</td>
+                        <td>A</td>
+                        <td>
+                            <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                                <option value="">En curso</option>
+                                <option value="">Finalizado</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="promedio" id="promedio"></td>
+                    </tr>
+                    <tr>
+                        <td>2022102</td>
+                        <td>Juan Felipe Montoya Rios</td>
+                        <td>9</td>
+                        <td>C</td>
+                        <td>
+                            <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                                <option value="">En curso</option>
+                                <option value="">Finalizado</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="promedio" id="promedio"></td>
+                    </tr>
+                    <tr>
+                        <td>2022103</td>
+                        <td>Luisa Maria Cruz Hernández</td>
+                        <td>9</td>
+                        <td>B</td>
+                        <td>
+                            <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                                <option value="">En curso</option>
+                                <option value="">Finalizado</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="promedio" id="promedio"></td>
+                    </tr>
+                    <tr>
+                        <td>2022104</td>
+                        <td>Ana Maria Bedoya López</td>
+                        <td>8</td>
+                        <td>B</td>
+                        <td>
+                            <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                                <option value="">En curso</option>
+                                <option value="">Finalizado</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="promedio" id="promedio"></td>
+                    </tr>
+                    <tr>
+                        <td>2022105</td>
+                        <td>Santiago Sánchez Rivera</td>
+                        <td>7</td>
+                        <td>A</td>
+                        <td>
+                            <select name="Profesor" id="Profesor" style="padding-right: 50px;">
+                                <option value="">En curso</option>
+                                <option value="">Finalizado</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="promedio" id="promedio"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>
